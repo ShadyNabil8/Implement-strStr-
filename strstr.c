@@ -12,7 +12,7 @@ int strStr(char* haystack, char* needle) {
 	for (int i = 0; haystack[i] != '\0'; i++) {
 		printf("enter loop\n");
 		if (haystack[i] == needle[0]) {
-			printf("enter if\n");
+			printf("enter if\n");/* '\0' ==> the null pointer*/
 			indexH = i;
 			while (haystack[indexH] == needle[indexN] && needle[indexN]!='\0' && haystack[indexH] != '\0') {
 				indexH++; indexN++; printf("enter while\n");
